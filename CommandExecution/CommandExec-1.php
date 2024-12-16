@@ -25,7 +25,8 @@
      
       
       if($_GET["username"] == "Admin" && $_GET["password"] == "ufoundmypassword")
-        echo "WELLDONE".$_GET["username"];
+        $nombre=$_GET["username"];
+        echo "WELLDONE".$nombre;
     }
 
     ?>
