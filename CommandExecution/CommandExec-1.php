@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<html>
+<html lang="es">
   <head>
     <link rel="shortcut icon" href="../Resources/hmbct.png" />
     <title>CommandExec-1</title>
