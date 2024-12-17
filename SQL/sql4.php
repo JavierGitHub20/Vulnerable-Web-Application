@@ -49,7 +49,21 @@
 			exit;
 		}
 
-		$query = "SELECT bookname,authorname FROM books WHERE number = $number"; 
+		$query = "SELECT bookname,authorname FROM books WHERE number =?"; 
+
+$stmt = mysqli_prepare($conn, $sql);
+
+// Vincular parámetros (sanitización automática)
+mysqli_stmt_bind_param($stmt, "s", $number);
+
+// Ejecutar la consulta
+mysqli_stmt_execute($stmt);
+
+// Obtener resultados
+$result = mysqli_stmt_get_result($stmt);
+
+
+		
 		$result = mysqli_query($conn,$query);
 
 		if (!$result) { //Check result
