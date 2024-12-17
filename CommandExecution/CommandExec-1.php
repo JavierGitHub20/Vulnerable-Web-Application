@@ -6,7 +6,7 @@
     <style>
 h1,label,input,form {
   align:center;
-}   
+}
     </style>
   </head>
   <body>
